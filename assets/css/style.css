@@ -1,28 +1,28 @@
 body {
     text-align: center;
-    background:  radial-gradient(whitesmoke, paleturquoise, turquoise);
+    background:  radial-gradient(whitesmoke, gray, gray);
 
 }
 .header {
     font-size: 60px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: navy;
+    color:black;
 }
 .img1 {
     width: 350px;
-    height: 900px;
+    height: 810px;
     float: right;
 }
 .img2 {
     width: 350px;
-    height: 900px;
+    height: 810px;
     float: left;
 
 }
 .timerContainer {
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: navy;
+    color: black;
 }
 #timer {
     border: 10px dashed black;
@@ -34,7 +34,7 @@ body {
 .question {
     font-size: 40px;
     font-weight: bold;
-    color: navy;
+    color:black;
 }
 .gameBody  {
     width: 500px;
