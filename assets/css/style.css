@@ -10,12 +10,12 @@ body {
 }
 .img1 {
     width: 375px;
-    height: 1350px;
+    height: 1250px;
     float: right;
 }
 .img2 {
     width: 375px;
-    height: 1350px;
+    height: 1250px;
     float: left;
 
 }
@@ -42,15 +42,10 @@ body {
     color: black;
 
 }
-.question {
+.questions {
     font-size: 40px;
     font-weight: bold;
     color:black;
-}
-#triviaQuestion {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-    color: black;
 }
 .gameBody {
     width: 600px;
@@ -58,10 +53,13 @@ body {
     border: 10px dashed black;
     margin: auto;
 }
-.questions {
+form {
+    font-size: 20px;
+}
+p {
     font-size: 25px;
     color: black;
-    font-weight: bold;
+    font-weight: normal;
 }
 .checkbox-inline {
     text-align: inherit;
