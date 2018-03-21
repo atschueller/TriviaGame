@@ -3,7 +3,7 @@ var startButton = $('#startButton');
 var correctScore = 0;
 var wrongScore = 0;
 var timerRunning = false;
-var timerNumber = 90;
+var time = 60;
 var intervalID;
 
 //Have JS/Jquery start after document is loaded//
@@ -16,13 +16,31 @@ $(document).ready(function () {
         wrongScore = 0;
     };
     resetGame();
-    
+
     $('#startButton').on('click', function () {
         $('#startButton').hide();
         $('.gameBody').show();
+        timerGoing();
     });
 
     //Create timer functions//
+    function timerGoing() {
+        intervalId = setInterval(decreasingTimer, 1000);
+    };
+
+    function decreasingTimer() {
+        time--;
+        $("#timer").html("<div>" + time + "</div>");
+
+        if (time === 0) {
+            clearInterval(intervalId);
+            alert('Time is Up!!');
+            resetGame();
+        };
+    };
+    decreasingTimer();
+
+    timerGoing();
 
     function submitAnswers() {
         var questions = 5;
@@ -34,7 +52,7 @@ $(document).ready(function () {
         var answers = ['c', 'b', 'a', 'a', 'c'];
 
         for (i = 1; i <= questions.length; i++) {
-            if (eval('q'+ 1) == answers[0 + 1]) {
+            if (eval('q' + 1) == answers[0 + 1]) {
                 correctScore++;
                 $('#correctAnswers').html('Correct Answers:' + correctScore.toString());
             } else {
