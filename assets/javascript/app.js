@@ -72,11 +72,12 @@ $(document).ready(function () {
 
         for (i = 1; i <= questions.length; i++) {
             if (eval('q' + 1) == answers[0 + 1]) {
-                console.log();
                 correctScore++;
+                console.log(correctScore);
                 $('#correctAnswers').html('Correct Answers:' + correctScore.toString());
             } else {
                 wrongScore++;
+                console.log(wrongScore);
                 $('#wrongAnswers').html('Wrong Answers:' + wrongScore.toString());
             };
         };
